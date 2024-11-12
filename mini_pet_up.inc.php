@@ -24,6 +24,7 @@ if ($_FILES['file']['error']==0 && $_GET['formhash'] == FORMHASH) {
              echo json_encode(array("error" =>lang('plugin/mini_pet', 'tupiangeshibuzhengque')));
 			 exit ;
 		 }
+	Spics =$_FILES['file']["name"];
      $filetype = array("jpg","jpeg","gif","png","JPG","JPEG","GIF","PNG");
 	 $arr=explode(".", strtolower($_FILES['file']["name"]));
      $hz = $arr[count($arr) - 1];
